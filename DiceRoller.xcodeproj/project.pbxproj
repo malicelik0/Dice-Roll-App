@@ -13,6 +13,7 @@
 		84ABEA9B280B3D0400C309D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABEA99280B3D0400C309D8 /* Main.storyboard */; };
 		84ABEA9D280B3D0600C309D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABEA9C280B3D0600C309D8 /* Assets.xcassets */; };
 		84ABEAA0280B3D0600C309D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABEA9E280B3D0600C309D8 /* LaunchScreen.storyboard */; };
+		84ABEAA9280B4B1500C309D8 /* diceSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84ABEAA8280B4B1500C309D8 /* diceSound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84ABEA9C280B3D0600C309D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84ABEA9F280B3D0600C309D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84ABEAA1280B3D0600C309D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ABEAA8280B4B1500C309D8 /* diceSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceSound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		84ABEA92280B3D0400C309D8 /* DiceRoller */ = {
 			isa = PBXGroup;
 			children = (
+				84ABEAA7280B4B0300C309D8 /* Sounds */,
 				84ABEA93280B3D0400C309D8 /* AppDelegate.swift */,
 				84ABEA95280B3D0400C309D8 /* SceneDelegate.swift */,
 				84ABEA97280B3D0400C309D8 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				84ABEAA1280B3D0600C309D8 /* Info.plist */,
 			);
 			path = DiceRoller;
+			sourceTree = "<group>";
+		};
+		84ABEAA7280B4B0300C309D8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				84ABEAA8280B4B1500C309D8 /* diceSound.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 				84ABEAA0280B3D0600C309D8 /* LaunchScreen.storyboard in Resources */,
 				84ABEA9D280B3D0600C309D8 /* Assets.xcassets in Resources */,
 				84ABEA9B280B3D0400C309D8 /* Main.storyboard in Resources */,
+				84ABEAA9280B4B1500C309D8 /* diceSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
