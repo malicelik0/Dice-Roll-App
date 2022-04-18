@@ -27,6 +27,15 @@ class ViewController: UIViewController {
         rollDice()
   
     }
+    override func viewWillAppear(_ animated: Bool) {
+        let userInterFace = traitCollection.userInterfaceStyle
+        
+        if userInterFace == .dark {
+            titleLabel.textColor = UIColor.white
+        } else {
+            titleLabel.textColor = UIColor.white
+        }
+    }
     
     func rollDice() {
         
