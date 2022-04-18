@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,39 +13,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-LG-Glp">
-                                <rect key="frame" x="66" y="392" width="112" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="8xM-fA-Hqc"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VHp-CF-MLp">
-                                <rect key="frame" x="233" y="392" width="112" height="112"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zar atmak için salla!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-U6-KO6">
-                                <rect key="frame" x="97" y="205" width="221" height="99"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zar atmak için salla!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T49-U6-KO6">
+                                <rect key="frame" x="96.5" y="205" width="221" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5qv-Po-Qpi">
+                                <rect key="frame" x="50" y="350" width="274" height="112"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-LG-Glp">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="9lc-lG-8BX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VHp-CF-MLp">
+                                        <rect key="frame" x="162" y="0.0" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="5Tb-hm-GAH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VHp-CF-MLp" firstAttribute="leading" secondItem="R2j-LG-Glp" secondAttribute="trailing" constant="50" id="rch-mh-6l7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R2j-LG-Glp" firstAttribute="top" secondItem="T49-U6-KO6" secondAttribute="bottom" constant="88" id="1nu-jk-tr8"/>
-                            <constraint firstItem="R2j-LG-Glp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3dK-4C-Bxj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VHp-CF-MLp" secondAttribute="trailing" constant="69" id="BeN-ue-yA8"/>
-                            <constraint firstItem="T49-U6-KO6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DPj-SM-5Ml"/>
-                            <constraint firstItem="T49-U6-KO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="Hgh-4v-zWp"/>
-                            <constraint firstItem="R2j-LG-Glp" firstAttribute="top" secondItem="VHp-CF-MLp" secondAttribute="top" id="N7w-s0-p9Z"/>
-                            <constraint firstItem="T49-U6-KO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="RQV-3G-eWx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R2j-LG-Glp" secondAttribute="bottom" constant="358" id="XqW-7U-zMR"/>
-                            <constraint firstItem="R2j-LG-Glp" firstAttribute="bottom" secondItem="VHp-CF-MLp" secondAttribute="bottom" id="lEh-zb-GYR"/>
-                            <constraint firstItem="R2j-LG-Glp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="q33-pu-ctR"/>
-                            <constraint firstItem="VHp-CF-MLp" firstAttribute="leading" secondItem="R2j-LG-Glp" secondAttribute="trailing" constant="55" id="xFP-Zt-6Cb"/>
+                            <constraint firstItem="5qv-Po-Qpi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O10-fU-VOZ"/>
+                            <constraint firstItem="5qv-Po-Qpi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Uve-wi-mHj"/>
+                            <constraint firstItem="5qv-Po-Qpi" firstAttribute="top" secondItem="T49-U6-KO6" secondAttribute="bottom" constant="117.5" id="mHE-ab-khw"/>
+                            <constraint firstItem="T49-U6-KO6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tdo-9s-GB0"/>
                         </constraints>
                     </view>
                     <connections>
