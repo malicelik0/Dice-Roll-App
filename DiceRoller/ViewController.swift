@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         rollDice()
   
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         let userInterFace = traitCollection.userInterfaceStyle
         
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
         imageView2.image = UIImage(named: "dice\(sayi2)")
         
     }
+    
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             let pathToSound = Bundle.main.path(forResource: "diceSound", ofType: "wav")!
@@ -64,11 +66,13 @@ class ViewController: UIViewController {
             
         }
     }
+    
     func animatedImages() {
         
         for i in 0...5 {
             images.append(UIImage(named: imageNames[i])!)
         }
+        // Animations
         imageView1.animationImages = images
         imageView1.animationDuration = 0.27
         imageView1.animationRepeatCount = 7
